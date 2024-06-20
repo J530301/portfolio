@@ -443,6 +443,8 @@ span {
   margin-top: 2rem;
 }
 
+
+
 .footer {
   position: relative;
   bottom: 0;
@@ -547,7 +549,7 @@ span {
     
   }
   .project{
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 5rem 4rem;
   }
   .project-content h3{

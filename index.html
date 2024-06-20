@@ -20,7 +20,7 @@
         <a href="#aboutme" class="active">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#project">Project</a>
-        <a href="#certifications">Certifications</a>
+        <a href="#certifications">Certifications/Certificates</a>
         <a href="#contact">Contact Me</a>
       </nav>
     </header>
@@ -87,6 +87,16 @@
     </section>
 
     <section class="project" id="project">
+      <div class="project-content">
+        <h3><span>Project </span>Details:</h3>
+        <p>
+          In our project, we developed a transaction website called Contract
+          Management System, designed to provide comprehensive tools for
+          monitoring client contracts and overseeing payment transactions. My
+          role in this project was focused on the Back-End and Database
+          development.
+        </p>
+      </div>
       <div class="project-container">
         <div class="project-box">
           <img src="images/IMG_7826.JPG" alt="project" />
@@ -106,21 +116,10 @@
           <img src="images/IMG_7830.JPG" alt="project" />
         </div>
       </div>
-
-      <div class="project-content">
-        <h3><span>Project </span>Details:</h3>
-        <p>
-          In our project, we developed a transaction website called Contract
-          Management System, designed to provide comprehensive tools for
-          monitoring client contracts and overseeing payment transactions. My
-          role in this project was focused on the Back-End and Database
-          development.
-        </p>
-      </div>
     </section>
 
     <section class="certifications" id="certifications">
-      <h2>Certifications</h2>
+      <h2>Certifications/Certificates</h2>
       <div class="timeline-items">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
@@ -137,40 +136,67 @@
             <img src="images/Databases_page-0001.jpg" alt="database" />
           </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <img src="images/IMG_7930.jpg" alt="3rdHonor" />
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <img src="images/Recognition Certificate - JEFFERSON V. ADLAWAN_page-0001.jpg" alt="2ndHonor" />
+          </div>
+        </div>
+
+        
       </div>
     </section>
 
     <section class="contact" id="contact">
       <h2>Contact <span>Me</span></h2>
 
-      <form action="">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="acf96f5c-6da2-4cd1-8d06-b5f0d620b453"
+        />
         <div class="input-group">
           <div class="input-box">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email" />
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
           </div>
-
           <div class="input-box">
-            <input type="number" placeholder="Phone Number" />
-            <input type="text" placeholder="Subject" />
+            <input
+              type="number"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
           </div>
         </div>
         <div class="input-group-2">
           <textarea
-            name=""
-            id=""
+            name="message"
             cols="30"
             rows="10"
             placeholder="Your Message"
+            required
           ></textarea>
           <input type="submit" value="Send Message" class="btn" />
         </div>
       </form>
       <footer class="footer">
         <div class="social">
-          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
-          <a href="#"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.facebook.com/jefferson.adlawan.3"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://github.com/J530301"><i class="bx bxl-github"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bx bxl-gmail"></i></a>
         </div>
 
         <ul class="list">
