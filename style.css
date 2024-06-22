@@ -130,6 +130,8 @@ span {
   border-radius: 70%;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  border: 7px solid var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
 }
 
 .aboutme-content p {
