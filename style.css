@@ -5,6 +5,7 @@
   --sidebar-bg: #1a1d23;
   --primary: #1a73e8;
   --primary-dark: #155ab6;
+  --border1:rgba(3, 2, 69, 0.773);
   --accent: #f03413ef;
   --text: #23272f;
   --text-light: #6b7280;
@@ -64,7 +65,7 @@ main {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 4px solid var(--primary);
+  border: 4px solid var(--border1);
   margin-bottom: 1.5rem;
   object-fit: cover;
   box-shadow: 0 0 0 8px rgba(26,115,232,0.08), 0 0 32px 0 #1a73e844;
@@ -269,12 +270,12 @@ section:hover {
 }
 
 .aboutme-img img {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 350px;
   border-radius: 50%;
-  border: 5px solid var(--primary);
+  border: 5px solid var(--border1);
   object-fit: cover;
-  box-shadow: 0 4px 24px rgba(26, 115, 232, 0.08);
+  box-shadow: 0 4px 24px rgba(33, 33, 236, 0.08);
 }
 
 /* === SKILLS === */
