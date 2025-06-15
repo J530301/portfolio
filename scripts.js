@@ -28,3 +28,44 @@ window.onscroll = () => {
     }
   });
 };
+
+// Animate fade-in for skills, certs, projects on scroll
+function animateOnScroll(selector, className = 'fade-in') {
+  const elements = document.querySelectorAll(selector);
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(className);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  elements.forEach(el => observer.observe(el));
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  // Add fade-in to skill, cert, and project cards
+  document.querySelectorAll('.skills-grid .skill-card').forEach((el, i) => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(30px)';
+    el.style.transitionDelay = `${0.1 + i * 0.1}s`;
+    el.classList.add('fade-in-trigger');
+  });
+  document.querySelectorAll('.certifications-grid .cert-card').forEach((el, i) => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(30px)';
+    el.style.transitionDelay = `${0.1 + i * 0.1}s`;
+    el.classList.add('fade-in-trigger');
+  });
+  document.querySelectorAll('.project-gallery img').forEach((el, i) => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(30px)';
+    el.style.transitionDelay = `${0.1 + i * 0.1}s`;
+    el.classList.add('fade-in-trigger');
+  });
+
+  animateOnScroll('.fade-in-trigger', 'fade-in');
+});

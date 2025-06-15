@@ -39,87 +39,108 @@
       </nav>
     </header>
     <main>
-      <section class="aboutme" id="aboutme">
+      <section class="aboutme glass" id="aboutme">
         <div class="aboutme-content">
-          <h2>Hello, I'm <span>Jefferson Adlawan</span></h2>
+          <h2>
+            <span class="wave">👋</span> Hello, I'm <span>Jefferson Adlawan</span>
+          </h2>
           <h3>Web Developer & Computer Science Student</h3>
           <p>
-            I am an aspiring web developer and current computer science student, seeking an internship to apply my knowledge of HTML, CSS, SQL, PHP, and Java. I am passionate about learning new technologies and eager to contribute to meaningful projects in a collaborative team setting.
+            I am a web developer and computer science student with a strong interest in creating websites that are user-friendly and effective. I am committed to producing quality work and value being part of a team where I can contribute and grow professionally.
           </p>
           <div class="btn-group">
-            <a href="https://drive.google.com/file/d/1Zws5v6PJu7zcvEHFddJGiblzCtcJgMeO/view?usp=sharing" class="btn">View Resume</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1Zws5v6PJu7zcvEHFddJGiblzCtcJgMeO/view?usp=sharing" class="btn btn-glow">View Resume</a>
+            <a href="#contact" class="btn btn-outline btn-glow">Contact Me</a>
           </div>
         </div>
         <div class="aboutme-img">
-          <img src="images/jeff2.png" alt="Jefferson Adlawan" />
+          <div class="avatar-glow">
+            <img src="images/jeff2.png" alt="Jefferson Adlawan" />
+          </div>
         </div>
       </section>
-      <section class="skills" id="skills">
-        <h2>Skills</h2>
+      <section class="skills glass" id="skills">
+        <h2><i class="bx bx-bolt"></i> Skills</h2>
         <div class="skills-grid">
-          <div class="skill-card">
+          <div class="skill-card skill-fade">
+            <img src="images/laravel.svg" alt="Laravel" />
+            <span>Laravel</span>
+          </div>
+          <div class="skill-card skill-fade">
+            <img src="images/node-js.svg" alt="Node" />
+            <span>Node</span>
+          </div>
+          <div class="skill-card skill-fade">
+            <img src="images/react.svg" alt="React" />
+            <span>React</span>
+          </div>
+          <div class="skill-card skill-fade">
             <img src="images/html.png" alt="HTML" />
             <span>HTML</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card skill-fade">
             <img src="images/css-3.png" alt="CSS" />
             <span>CSS</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card skill-fade">
             <img src="images/php-programming-language.png" alt="PHP" />
             <span>PHP</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card skill-fade">
             <img src="images/sql-server.png" alt="SQL" />
             <span>SQL</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card skill-fade">
             <img src="images/file.png" alt="Java" />
             <span>Java</span>
           </div>
         </div>
       </section>
-      <section class="certifications" id="certifications">
-        <h2>Certifications</h2>
+      <section class="certifications glass" id="certifications">
+        <h2><i class="bx bx-award"></i> Certifications</h2>
         <div class="certifications-grid">
-          <div class="cert-card">
+          <div class="cert-card cert-fade">
             <img src="images/HTML and CSS_page-0001.jpg" alt="HTML/CSS Certificate" />
             <h3>HTML &amp; CSS</h3>
           </div>
-          <div class="cert-card">
+          <div class="cert-card cert-fade">
             <img src="images/Databases_page-0001.jpg" alt="Database Certificate" />
             <h3>Database</h3>
           </div>
-          <div class="cert-card">
+          <div class="cert-card cert-fade">
             <img src="images/IMG_7930.jpg" alt="Second Honors" />
             <h3>Second Honors</h3>
           </div>
-          <div class="cert-card">
+          <div class="cert-card cert-fade">
             <img src="images/Recognition Certificate - JEFFERSON V. ADLAWAN_page-0001.jpg" alt="Third Honors" />
             <h3>Third Honors</h3>
           </div>
         </div>
       </section>
-      <section class="project" id="project">
-        <h2>Project</h2>
-        <div class="project-content">
-          <h3>Contract Management System</h3>
-          <p>
-            Developed a transaction website called Contract Management System, providing comprehensive tools for monitoring client contracts and overseeing payment transactions. My role focused on back-end and database development.
-          </p>
-        </div>
-        <div class="project-gallery">
-          <img src="images/IMG_7826.JPG" alt="Project Screenshot 1" />
-          <img src="images/IMG_7827.JPG" alt="Project Screenshot 2" />
-          <img src="images/IMG_7828.JPG" alt="Project Screenshot 3" />
-          <img src="images/IMG_7829.JPG" alt="Project Screenshot 4" />
-          <img src="images/IMG_7830.JPG" alt="Project Screenshot 5" />
+      <section class="project glass" id="project">
+        <div class="project-flex">
+          <div class="project-info">
+            <h2><i class="bx bx-rocket"></i> Personal Project</h2>
+            <h3>ShopTime Ecommerce Website</h3>
+            <p>
+              ShopTime is an e-commerce website project built with two connected platforms, one using Laravel and the other using Node.js with React.<br><br>
+              The Laravel version handles the core features, including separate authentication for admin and users. Admins can manage products by adding, updating, or deleting them, and also have the ability to edit user accounts. Users can view available products, make purchases, and track their orders.<br><br>
+              The second version of ShopTime, built with Node.js and React, offers a different design but provides the same functionalities. Both platforms are part of one project, showcasing the same e-commerce system developed using two different programming stacks.
+            </p>
+          </div>
+          <div class="project-gallery">
+            <div class="project-img-card project-fade">
+              <img src="images/laravel.png" alt="Laravel Version Screenshot" />
+            </div>
+            <div class="project-img-card project-fade">
+              <img src="images/react1.png" alt="React Version Screenshot" />
+            </div>
+          </div>
         </div>
       </section>
-      <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
+      <section class="contact glass" id="contact">
+        <h2><i class="bx bx-envelope"></i> Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
           <input type="hidden" name="access_key" value="acf96f5c-6da2-4cd1-8d06-b5f0d620b453" />
           <div class="form-row">
             <input type="text" name="name" placeholder="Full Name" required />
@@ -130,7 +151,7 @@
             <input type="tel" name="phone" placeholder="Phone Number" />
           </div>
           <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn btn-glow">Send Message</button>
         </form>
       </section>
       <footer class="footer">
